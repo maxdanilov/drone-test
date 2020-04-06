@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: backend
+  image: golang
+  commands:
+  - echo 'this is go!'
+
+- name: frontend
+  image: node
+  commands:
+  - echo 'this is node!'
